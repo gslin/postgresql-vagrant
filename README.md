@@ -1,5 +1,5 @@
-Elasticsearch Vagrantfile
-=========================
+PostgreSQL Vagrantfile
+======================
 
 Overview
 --------
