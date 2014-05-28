@@ -1,6 +1,8 @@
 #!/bin/sh
 
 work() {
+    sed -i -e 's/%sudo ALL=NOPASSWD:ALL/%sudo ALL=(ALL)NOPASSWD:ALL/' /etc/sudoers
+
     wget -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | apt-key add -
     sed -i -e 's@http://archive.ubuntu.com@http://tw.archive.ubuntu.com@' /etc/apt/sources.list
 
